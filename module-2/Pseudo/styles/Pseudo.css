@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section{
+
+}
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+h3{
+    /* background-color: blueviolet; */
+    color: white;
+    transition: all 0.3s;
+}
+h3:hover{
+    /* background-color: white; */
+    color: blueviolet;
+}
