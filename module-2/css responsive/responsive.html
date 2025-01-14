@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive</title>
     <style>
-      .body {
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
         max-width: 1140px;
         margin: 0 auto;
       }
-      .container {
+      .food-container {
         display: grid;
         grid-template-columns: repeat(3, 3fr);
-
         gap: 5px;
       }
       .food {
@@ -30,25 +34,94 @@
 
       /* smaller devices */
       @media screen and (max-width: 576px) {
-        .container {
+        .food-container {
           grid-template-columns: repeat(1, 1fr);
           text-align: center;
         }
-        .container h1 {
-         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        .food-container h1 {
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+            sans-serif;
         }
       }
 
       @media screen and (min-width: 576px) and (max-width: 992px) {
-        .container {
+        .food-container {
           grid-template-columns: repeat(2, 1fr);
         }
       }
     </style>
   </head>
   <body>
-    <main>
-      <div class="container">
+    <main class="">
+      <div class="food-container container">
+        <div class="food">
+          <img src="./assets/food.jpg" alt="food" />
+          <h1>A bowl of Mashroom</h1>
+          <p>Mashroom is very much delicious and nourishing food</p>
+          <button>Order Now</button>
+        </div>
+        <div class="food">
+          <img src="./assets/food.jpg" alt="food" />
+          <h1>A bowl of Mashroom</h1>
+          <p>Mashroom is very much delicious and nourishing food</p>
+          <button>Order Now</button>
+        </div>
+        <div class="food">
+          <img src="./assets/food.jpg" alt="food" />
+          <h1>A bowl of Mashroom</h1>
+          <p>Mashroom is very much delicious and nourishing food</p>
+          <button>Order Now</button>
+        </div>
+        <div class="food">
+          <img src="./assets/food.jpg" alt="food" />
+          <h1>A bowl of Mashroom</h1>
+          <p>Mashroom is very much delicious and nourishing food</p>
+          <button>Order Now</button>
+        </div>
+        <div class="food">
+          <img src="./assets/food.jpg" alt="food" />
+          <h1>A bowl of Mashroom</h1>
+          <p>Mashroom is very much delicious and nourishing food</p>
+          <button>Order Now</button>
+        </div>
+        <div class="food">
+          <img src="./assets/food.jpg" alt="food" />
+          <h1>A bowl of Mashroom</h1>
+          <p>Mashroom is very much delicious and nourishing food</p>
+          <button>Order Now</button>
+        </div>
+        <div class="food">
+          <img src="./assets/food.jpg" alt="food" />
+          <h1>A bowl of Mashroom</h1>
+          <p>Mashroom is very much delicious and nourishing food</p>
+          <button>Order Now</button>
+        </div>
+        <div class="food">
+          <img src="./assets/food.jpg" alt="food" />
+          <h1>A bowl of Mashroom</h1>
+          <p>Mashroom is very much delicious and nourishing food</p>
+          <button>Order Now</button>
+        </div>
+        <div class="food">
+          <img src="./assets/food.jpg" alt="food" />
+          <h1>A bowl of Mashroom</h1>
+          <p>Mashroom is very much delicious and nourishing food</p>
+          <button>Order Now</button>
+        </div>
+        <div class="food">
+          <img src="./assets/food.jpg" alt="food" />
+          <h1>A bowl of Mashroom</h1>
+          <p>Mashroom is very much delicious and nourishing food</p>
+          <button>Order Now</button>
+        </div>
+        <div class="food">
+          <img src="./assets/food.jpg" alt="food" />
+          <h1>A bowl of Mashroom</h1>
+          <p>Mashroom is very much delicious and nourishing food</p>
+          <button>Order Now</button>
+        </div>
+      </div>
+      <div class="food-container">
         <div class="food">
           <img src="./assets/food.jpg" alt="food" />
           <h1>A bowl of Mashroom</h1>
