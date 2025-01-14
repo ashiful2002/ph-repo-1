@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive</title>
     <style>
+      .body {
+        max-width: 1140px;
+        margin: 0 auto;
+      }
       .container {
         display: grid;
-        grid-template-columns: repeat(500px 1fr);
-        margin: 0 auto;
+        grid-template-columns: repeat(3, 3fr);
+
         gap: 5px;
       }
       .food {
-        width: 500px;
+        /* width: 500px; */
         border: 1px solid blueviolet;
         border-radius: 5px;
-        box-shadow: 2px 2px 2px violet;
+        box-shadow: 1px 1px 4px -1px blueviolet;
         padding: 10px;
         margin: 0 auto;
       }
@@ -23,24 +27,21 @@
         width: 100%;
         border-radius: 2%;
       }
+
+      /* smaller devices */
       @media screen and (max-width: 576px) {
         .container {
-          grid-template-columns: repeat(500px 1fr);
+          grid-template-columns: repeat(1, 1fr);
+          text-align: center;
+        }
+        .container h1 {
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
       }
-      @media screen and (max-width: 576px) {
+
+      @media screen and (min-width: 576px) and (max-width: 992px) {
         .container {
-          grid-template-columns: repeat(500px 1fr);
-        }
-      }
-      @media screen and (max-width: 992px) {
-        .container {
-          grid-template-columns: repeat(500px 2fr)
-        }
-      }
-      @media screen and (max-width: 1200px) {
-        .container {
-          grid-template-columns: repeat(400px 400px 1fr)
+          grid-template-columns: repeat(2, 1fr);
         }
       }
     </style>
